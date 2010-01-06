@@ -1,0 +1,226 @@
+/** Style guide
+1) group rules by selector
+/* =SELECTOR */
+
+2) each rule arranged as 
+SELECTOR {
+	POSITION ATTRIBUTES - position, top etc.
+	SIZE ATTRIBUTES - margin, padding, border, font size, etc.
+	OTHER ATRRIBUTES - color etc. }
+*/
+
+
+html {
+	color: #000;
+	background: #FFF;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+optgroup {
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+del,
+ins {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: baseline;
+}
+
+sub {
+	vertical-align: baseline;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+	color: #000;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,
+button,
+textarea,
+select {
+	*font-size: 100%;
+}
+
+/* ^^ yui reset ^^ */
+
+/* body */
+	body {
+		font-size:12px; line-height:1.5;
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; background-color:white; }
+
+/* =div */
+	.bounded {
+		position:relative;
+		margin-left:auto; margin-right:auto; width:740px; }
+		
+  #header {
+	  width:100%;
+		background-color:#337766; overflow:hidden; }
+		
+	#container {
+		padding:5px;}
+	
+	.messages {
+		padding:2px;
+		background-color:#ffff66; }
+	
+	li div {
+	}
+		
+/* =h1 */
+  h1 {
+		font-size:2em; margin:10px 0px 10px 0px; 
+		color:#222; }
+
+/* =h3 */
+	h3 {
+		font-size}
+
+/* =p */
+	p {
+		margin:10px 0px; }
+		
+/* =span */
+	#branding {
+		float:left;
+		font-size:2.6em; padding:5px 0px; letter-spacing:5px;
+		color:black; font-weight:lighter; }
+	
+/* =a */
+	#header a {
+		float:right;
+		padding:5px; font-size:0.9em;
+		color:white; }
+		
+	a {
+		text-decoration:none; }		
+		
+	a:hover {
+		text-decoration:underline; }
+		
+	a, a:hover, a:visited, a:active {
+		color:#0055ee; }
+	
+	a.new {
+		position:absolute; right:0px; top:0px; 
+		padding:2px 7px; margin: 9px 0px; font-size:1em;
+		background-color:#55CC77; color:white; }
+		
+	a.new:hover {
+		background-color:#44DD66; text-decoration:none;}
+		
+/* table */
+  table {
+		margin-bottom:15px; }
+		
+/* tr */
+  tr {
+		border-bottom:1px dashed #ccc; }
+		
+/* th */
+	th {
+		font-size:1em; font-weight:bold; }
+
+/* td */
+	td {
+		padding:5px 15px 5px 0px; }
+
+
+

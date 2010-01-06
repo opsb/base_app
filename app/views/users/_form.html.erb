@@ -1,0 +1,28 @@
+<% form_for @user, :url => user_path do |user_form| %>
+  <%= user_form.error_messages %>
+  <p>
+    <%= user_form.label :username %><br />
+    <%= user_form.text_field :username %>
+  </p>
+  <p>
+    <%= user_form.label :first_name %><br />
+    <%= user_form.text_field :first_name %>
+  </p>
+  <p>
+    <%= user_form.label :last_name %><br />
+    <%= user_form.text_field :last_name %>
+  </p>
+  <p>
+    <%= user_form.label :email, "Email Address" %><br />
+    <%= user_form.text_field :email %>
+  </p>
+  <p>
+    <%= user_form.label :password %><br />
+    <%= user_form.password_field :password %>
+  </p>
+  <p>
+    <%= user_form.label :password_confirmation, "Confirm Password" %><br />
+    <%= user_form.password_field :password_confirmation %>
+  </p>
+  <p><%= user_form.submit link_label %></p>
+<% end %>
