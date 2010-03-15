@@ -1,5 +1,6 @@
 # Settings specified here will take precedence over those in config/environment.rb
-config.gem "cucumber",      :version => '>= 0.4.2', :lib => false,          :source => "http://gemcutter.org"
+config.gem "cucumber",      :version => '0.6.3', :lib => false,          :source => "http://gemcutter.org"
+config.gem "cucumber-rails",      :version => '0.3.0', :lib => false,          :source => "http://gemcutter.org"
 config.gem 'bmabey-email_spec', :lib => 'email_spec'
 config.gem "shoulda",       :version => '>= 2.10.2',:lib => "shoulda",      :source => "http://gemcutter.org"
 config.gem "factory_girl",  :version => '>= 1.2.3', :lib => "factory_girl", :source => "http://gemcutter.org" 
